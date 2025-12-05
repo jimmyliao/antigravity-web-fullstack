@@ -2,6 +2,8 @@
 
 一個專為 **JavaScript/TypeScript 全端開發者**設計的輕量級 Google Antigravity 工作空間。
 
+> **English Version**: [Click to Expand](#english-version)
+
 ## ✨ 特色
 
 - 🌏 **繁體中文優先**：所有文檔、註解使用繁體中文
@@ -112,3 +114,125 @@ MIT License
 ---
 
 **由 Antigravity AI 助手協助開發** 🚀
+
+---
+
+<details>
+<summary id="english-version"><strong>English Version</strong></summary>
+
+# Antigravity Web Full-Stack Workspace
+
+A lightweight Google Antigravity workspace designed for **JavaScript/TypeScript full-stack developers**.
+
+## ✨ Features
+
+- 🌏 **Traditional Chinese First**: All documentation and comments are in Traditional Chinese.
+- ⚡ **Modern Tech Stack**: Next.js 15 + React 19 + TypeScript.
+- 🎯 **Lightweight Design**: Contains only essential files for a quick start.
+- 🤖 **AI-Enhanced**: Built-in rules for the Antigravity AI assistant.
+- 🛠️ **Fully Tooled**: Includes tools for frontend, backend, and database development.
+
+## 🚀 Quick Start
+
+### 1. Clone This Template
+```bash
+git clone <this-repo>
+cd antigravity-web-fullstack
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+# or
+pnpm install
+```
+
+### 3. Open Antigravity IDE
+```bash
+antigravity .
+```
+
+### 4. Start Developing
+Prompt directly in Antigravity:
+> "Help me create a user login page using Next.js App Router and shadcn/ui"
+
+The AI assistant will:
+1. Generate a plan in `artifacts/plans/`.
+2. Generate code using the tools in `tools/`.
+3. Log the process in `artifacts/logs/`.
+
+## 📁 Project Structure
+
+```
+antigravity-web-fullstack/
+├── .antigravity/
+│   └── rules.md              # AI assistant behavior rules
+├── .context/
+│   ├── web-dev-style.md      # Development style guide
+│   └── tech-stack.md         # Tech stack reference
+├── mission.md                # Project mission definition
+├── artifacts/                # AI-generated outputs
+├── tools/                    # Development tools (JS/TS)
+└── package.json
+```
+
+## 🛠️ Tech Stack
+
+### Frontend
+- Next.js 15 (App Router)
+- React 19
+- TypeScript 5.7
+- TailwindCSS + shadcn/ui
+
+### Backend
+- Node.js + Fastify
+- Drizzle ORM
+- PostgreSQL
+
+### Deployment
+- Vercel (Frontend)
+- Railway (Backend)
+
+## 📖 Usage
+
+### Example 1: Generate a React Component
+Prompt in Antigravity:
+> "Use frontend-tools to generate a UserProfile component with name, email, and avatarUrl props"
+
+### Example 2: Create an API Endpoint
+> "Create a GET /api/users endpoint that queries all users from the database"
+
+### Example 3: Database Schema
+> "Design a posts table with title, content, authorId, and createdAt fields"
+
+## 🎯 Workflow
+
+1. **Define Requirement** → AI understands the task.
+2. **Generate Plan** → A detailed plan in `artifacts/plans/`.
+3. **Execute Development** → Generate code using `tools/`.
+4. **Log & Reflect** → Learning log in `artifacts/logs/`.
+
+## 📝 Customization
+
+### Modify Tech Stack
+Edit `.context/tech-stack.md` and `mission.md`.
+
+### Adjust AI Behavior
+Edit `.antigravity/rules.md`.
+
+### Add New Tools
+Add `.js` or `.ts` files to the `tools/` directory.
+
+## 🤝 Contributing
+
+Issues and Pull Requests are welcome!
+
+## 📄 License
+
+MIT License
+
+---
+
+**Developed with the assistance of the Antigravity AI assistant** 🚀
+
+</details>
