@@ -4,6 +4,7 @@ import * as React from "react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import * as z from "zod"
+import { useRouter } from "next/navigation"
 import { Loader2 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -31,6 +32,7 @@ const formSchema = z.object({
 type FormData = z.infer<typeof formSchema>
 
 export function LoginForm({ className, ...props }: React.ComponentProps<"div">) {
+    const router = useRouter()
     const [isLoading, setIsLoading] = React.useState<boolean>(false)
     const {
         register,
@@ -62,8 +64,11 @@ export function LoginForm({ className, ...props }: React.ComponentProps<"div">) 
             }
 
             console.log("Login successful:", result)
-            alert("Login successful! Token: " + result.token)
-            // Here you would typically store the token and redirect
+            // Store token for client-side usage
+            localStorage.setItem("token", result.token)
+
+            // Redirect to dashboard
+            router.push("/dashboard")
         } catch (error) {
             console.error(error)
             alert(error instanceof Error ? error.message : "Login failed")
